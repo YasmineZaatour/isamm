@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <img src ="image/logo.png">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="program.html">COURSE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Welcome To My University ISAMM.</h1>
+        <p>
+          The Higher Institute of Multimedia Arts of La Manouba is a Tunisian
+          training institute in the field of information and communication
+          technologies, particularly in that of multimedia.<br />
+          Attached to the University of La Manouba, it is a member of the
+          International University of Multimedia.
+        </p>
+        <a href="http://www.isa2m.rnu.tn/" class="hero-btn">Visit us to know More</a>
+      </div>
+    </section>
+    <!----course----->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p></p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>L.Multimedia Computing</h3>
+          <p>
+            Give the student a theoretical training allowing him
+            to acquire knowledge and skills in the field of
+            computing and multimedia.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>L.BIG DATA & Analyse de Données</h3>
+          <p>
+            Analyzing huge amounts of data coming from the market,
+            and this in real time allows companies to take the right
+            strategic decisions and to carry out intelligent actions. A good mastery of Big Data therefore makes it possible to improve the commitment of
+            customers, increase revenue and reduce costs.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>L. Micro Computing & Embedded Machines</h3>
+          <p>
+            An embedded system is defined as an electronic system and
+            autonomous computing, often real-time, specialized in one task precise. The term refers to both computer hardware and
+            software used. Its resources are usually limited
+            spatially (reduced size) and energetically (consumption
+            restraint).
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>L. Multimedia Communication</h3>
+          <p>
+            The License in Multimedia Communication complies with the LMD system set up by the Ministry of Higher Education. It's about practical and theoretical training and initiation into the professions of
+            multimedia and communication. The learning of different
+            software (computer graphics, 2D and 3D animation, sound editing and
+            videography, multimedia production) associated with an initiation
+            theory to image communication and design
+            artistic multimedia projects.
+          </p>
+        </div>
+        
+    </section>
+    <!----Call to action-->
+    <section class="cta">
+      <h1>Enroll For Our Various Online Courses <br>Anywhere From The World</h1>
+      <a href="contact.html" class="hero-btn">Contact Us</a>
+    </section>
+    <!----Footer-->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>The Higher Institute of Multimedia Arts of La Manouba (ISAMM) is a Tunisian training institute in the field of technologies  <br> information and communication, particularly in the multimedia sector </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100063945285880"><i class="fa fa-facebook"></i></a>
+        
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Fisamm-manouba%2F%3Ffbclid%3DIwAR0dmfxN9WR55bk5PEG5_NIZsX12SKR_HTr30bXEIJyZdCp2M4Fv8FnsCKY&h=AT33EAFMoooY4QOLLoQIeAHoAivNPNCQFicd4gVbwh89jUDlqjye9nLL-S7vrgb7WTeKkN9tCO51tSwrOdxY_C2fXeFn2iG836Md4AIKfPmHLUO2I-1VnkxkfalKaPV7yCMe3w"><i class="fa fa-linkedin"></i></a>
+        <p>Address: University Campus of La Manouba - CP 2010, Tunis, Tunisia.</p>
+        <p> Email : direction@isamm.uma.tn</p>
+        <p> Tel. : +216 71 603 498</p>
+        <p> Fax : +216 71 603 450</p>
+      </div>
+      <p> Made with <i class="fa fa-heart-o"></i>by Yasmine Zaatour</p>
+    </section>
+  
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

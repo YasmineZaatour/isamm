@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src ="image/logo.png"</a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="program.html">COURSE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Programs</h1>
+    </section>
+    <!---blog page content-->
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <h2>Our Programs For 2022/2023</h2>
+          <img src="image/master.jpg" />
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="text" placeholder="Enter Your Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Post Comments
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Informatique & Multimédia</span>
+          </div>
+
+          <div>
+            <span>Big DATA & Analyse de Données</span>
+          </div>
+          <div>
+            <span>Micro Informatique & Machines Embarqués</span>
+          </div>
+          <div>
+            <span>Coco jeux Video</span>
+          </div>
+          <div>
+            <span>Coco 3D</span>
+          </div>
+          <div>
+            <span>Communicaton Multimedia</span>
+          </div>
+          <div>
+            <span>Cinéma et Audio Visuel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----Footer-->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        L'Institut supérieur des arts multimédia de La Manouba (ISAMM) est un
+        institut tunisien de formation dans le domaine des technologies <br />
+        de l'information et de la communication, particulièrement dans celui du
+        multimédia.
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100063945285880"
+          ><i class="fa fa-facebook"></i
+        ></a>
+
+        <i class="fa fa-linkedin"></i>
+        <p>
+          Adresse : Campus Universitaire de La Manouba - CP 2010, Tunis,
+          Tunisie.
+        </p>
+        <p>Email : direction@isamm.uma.tn</p>
+        <p>Tel. : +216 71 603 498</p>
+        <p>Fax : +216 71 603 450</p>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i>by Yasmine Zaatour</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

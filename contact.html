@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src ="image/logo.png"</a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="program.html">COURSE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About us</h1>
+    </section>
+    <!-----contact us-->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.0905728666976!2d10.058772015031954!3d36.816349479945316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd2d9783ace44f%3A0xde66d0d8c4b29aa6!2sISAMM%20Institut%20Sup%C3%A9rieur%20des%20Arts%20Multim%C3%A9dia%20de%20la%20Manouba!5e0!3m2!1sfr!2stn!4v1670268274591!5m2!1sfr!2stn"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>ISAMM, Campus Universitaire de la Manouba, 2010</h5>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>direction@isamm.uma.tn</h5>
+              <p>Email us</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+216 71 603 498</h5>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="Post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter Your subject"
+              required
+            />
+            <textarea
+              rows="5"
+              name="message"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!----Footer-->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        The Higher Institute of Multimedia Arts of La Manouba (ISAMM) is a
+        Tunisian training institute in the field of technologies <br />
+        information and communication, particularly in the multimedia sector
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100063945285880"
+          ><i class="fa fa-facebook"></i
+        ></a>
+
+        <a
+          href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Fisamm-manouba%2F%3Ffbclid%3DIwAR0dmfxN9WR55bk5PEG5_NIZsX12SKR_HTr30bXEIJyZdCp2M4Fv8FnsCKY&h=AT33EAFMoooY4QOLLoQIeAHoAivNPNCQFicd4gVbwh89jUDlqjye9nLL-S7vrgb7WTeKkN9tCO51tSwrOdxY_C2fXeFn2iG836Md4AIKfPmHLUO2I-1VnkxkfalKaPV7yCMe3w"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <p>
+          Address: University Campus of La Manouba - CP 2010, Tunis, Tunisia.
+        </p>
+        <p>Email : direction@isamm.uma.tn</p>
+        <p>Tel. : +216 71 603 498</p>
+        <p>Fax : +216 71 603 450</p>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i>by Yasmine Zaatour</p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
